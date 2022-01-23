@@ -1,12 +1,35 @@
 ﻿// Collatz_problem.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
 //
 
-#include <iostream>
+#include "CollatzProblem.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    while (true)
+    {
+        IntType input = 0;
+        std::cout << "Value = ";
+        std::cin >> input;
+        std::cout << std::endl;
+
+        CollatzProbrem collatzProblem(input);
+        collatzProblem.Execute();
+
+        std::string isEnd;
+        std::cout << "End?(y/n) ";
+        std::cin >> isEnd;
+        if (isEnd == "y")
+        {
+            break;
+        }
+
+        std::cout << std::endl;
+
+    }
 }
+
+
+
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
 // プログラムのデバッグ: F5 または [デバッグ] > [デバッグの開始] メニュー

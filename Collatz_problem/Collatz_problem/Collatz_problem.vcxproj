@@ -139,7 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CollatzProblem.cpp" />
     <ClCompile Include="Collatz_problem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CollatzProblem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
